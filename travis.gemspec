@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   # generated from git shortlog -sn
   s.authors = [
-    "Vinay Karadia"
+    "Vinay Karadia",
     "Konstantin Haase",
     "Hiro Asari",
     "Henrik Hodne",
@@ -55,7 +55,7 @@ Gem::Specification.new do |s|
 
   # generated from git shortlog -sne
   s.email = [
-	"vinay_karadia@persistent.co.in"
+	"vinay_karadia@persistent.co.in",
     "konstantin.mailinglists@googlemail.com",
     "asari.ruby@gmail.com",
     "me@henrikhodne.com",
