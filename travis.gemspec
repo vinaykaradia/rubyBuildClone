@@ -4,13 +4,14 @@ Gem::Specification.new do |s|
   s.name        = "travis"
   s.version     = "1.7.5"
   s.description = "CLI and Ruby client library for Travis CI"
-  s.homepage    = "https://github.com/travis-ci/travis.rb"
+  s.homepage    = "https://github.com/vinaykaradia/rubyBuildClone"
   s.summary     = "Travis CI client"
   s.license     = "MIT"
   s.executables = ["travis"]
 
   # generated from git shortlog -sn
   s.authors = [
+    "Vinay Karadia"
     "Konstantin Haase",
     "Hiro Asari",
     "Henrik Hodne",
@@ -54,6 +55,7 @@ Gem::Specification.new do |s|
 
   # generated from git shortlog -sne
   s.email = [
+	"vinay_karadia@persistent.co.in"
     "konstantin.mailinglists@googlemail.com",
     "asari.ruby@gmail.com",
     "me@henrikhodne.com",
@@ -295,7 +297,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rack-test", "~> 0.6"
 
   # Prereleasing on Travis CI
-  if ENV['TRAVIS_JOB_NUMBER'] and ENV['TRAVIS_REPO_SLUG'] == 'travis-ci/travis.rb'
+  if ENV['TRAVIS_JOB_NUMBER'] and ENV['TRAVIS_REPO_SLUG'] == 'vinaykaradia/rubyBuildClone'
     digits = s.version.to_s.split '.'
     digits[-1] = digits[-1].to_s.succ
     s.version = digits.join('.') + ".travis.#{ENV['TRAVIS_JOB_NUMBER']}"
